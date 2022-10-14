@@ -1,0 +1,129 @@
+$color-font: #33d ;
+$color-bg-default: #a9f;
+$color-bg-boxes: #FD3;
+$font-default: Arial, Helvetica, sans-serif;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color-bg-default;
+    font-family: $font-default;
+}
+
+h1 {
+    color: $color-font;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+h2 {
+    margin-top: 4rem;
+}
+
+.container {
+    max-width: 1200px;
+
+    // img {
+    //     width: 100%;
+    //     height: auto;
+    // }
+
+}
+
+.box__container {
+    background: $color-bg-boxes;
+    border-radius: 1rem;
+    display: flex;
+    margin: 2rem auto 4rem;
+    padding: 1rem;
+    align-items: center;
+    max-width: 500px;
+    height: 20rem;
+
+    &--around {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+    &--between {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between; // eixo x
+        align-items: flex-end; // eixo y
+    }
+
+    &--evenly {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    &--center {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    &--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1rem;
+        height: fit-content;
+    }
+
+    &--image {
+
+        .box {
+            overflow: hidden;
+            border: 3px solid $color-bg-default;
+            width: auto;
+            img {
+                width: 20rem;
+                height: 20rem;
+                object-fit: cover;
+                object-position: 10% 50%;
+            }
+        }
+    }
+
+}
+
+.box {
+    background-color: $color-font;
+    border-radius: 1rem;
+    border: 2px solid $color-bg-default;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    position: relative;
+    min-width: 10rem;
+    min-height: 10rem;
+
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes slideIn {
+    from {
+        left: -999px;
+        opacity: .1;
+        height: 0;
+        width: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+        height: fit-content;
+    }
+}
