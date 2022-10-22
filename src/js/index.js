@@ -1,18 +1,17 @@
 import '../scss/styles.scss'
-import imageBuilding from '../assets/building.jpg'
-import imageNotebook from '../assets/notebook.jpg'
+/*import imageLogo from '../assets/images/logo-w.png'
 
 const elemRoot = document.getElementById('root')
 elemRoot.classList.add('container')
 
 const elemImageBuilding = new Image()
-elemImageBuilding.src = imageBuilding
+elemImageBuilding.src = imageLogo
 
 const elemImageNotebook = new Image()
 elemImageNotebook.src = imageNotebook
 
-document.querySelector('#building')
+document.querySelector('#logo')
     .appendChild(elemImageBuilding)
 
 document.querySelector('#notebook')
-    .appendChild(elemImageNotebook)
+    .appendChild(elemImageNotebook)*/

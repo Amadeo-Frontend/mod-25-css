@@ -4,60 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Framework Simulator</title>
+    <link rel="shortcut icon" href="./assets/images/LogoMakr-2mFnnD.png" type="image/x-icon">
+    <title>Bondevs ME</title>
 </head>
 <body>
     <div id="root">
-        <h1>FlexBox</h1>
-
-        <h2>space-around</h2>
-        <div class="box__container box__container--around">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
+        <header>
+            <div class="container">
+                <h2><img src="../src/assets/images/logo-w.png" alt="logo bondevs"></h2>
+                <nav class="nav">
+                    <a class="nav__item" href="#sobre">Sobre nós</a>
+                    <a class="nav__item" href="#produtos">Produtos</a>
+                    <a class="nav__item" href="#contato">Contato</a>
+                </nav>
+                <div class="hero">
+                 <h1>Veja como acelerar a criação do seu negócio</h1>
+                   
+                </div>
+            </div>
+        </header>
+        <section id="sobre">
+            <div class="container">
+                
+                <article>
+                    <h1>Sobre nós</h1>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
+                </article>
+            </div>
+        </section>
+        <section id="produtos">
+            <div class="container">
+                <h1>Catálogo</h1>
+                <div class="vitrine">  
+                    <div class="vitrine__item">
+                        <h3 class="vitrine__produto">Produto 1</h3>
+                        <div class="vitrine__img"></div>
+                        <p class="vitrine__desc"></p>
+                        <a href="" class="vitrine__button">Ver detalhes</a>
+                    </div>
+                    <div class="vitrine__item">
+                        <h3 class="vitrine__produto">Produto 2</h3>
+                        <div class="vitrine__img"></div>
+                        <p class="vitrine__desc"></p>
+                        <a href="" class="vitrine__button">Ver detalhes</a>
+                    </div>
+                    <div class="vitrine__item">
+                        <h3 class="vitrine__produto">Produto 3</h3>
+                        <div class="vitrine__img"></div>
+                        <p class="vitrine__desc"></p>
+                        <a href="" class="vitrine__button">Ver detalhes</a>
+                    </div>
+                    <div class="vitrine__item">
+                        <h3 class="vitrine__produto">Produto 4</h3>
+                        <div class="vitrine__img"></div>
+                        <p class="vitrine__desc"></p>
+                        <a href="" class="vitrine__button">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-
-        <h2>space-between</h2>
-        <div class="box__container box__container--between">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
+    </section>
+    <section id="contato">
+        <div class="container">
+            <h1>Contato</h1>
+            <form class="contato">
+                <input type="text" placeholder="Nome"
+                class="contato__input">
+                <input type="text" placeholder="Email"
+                class="contato__input">
+                <button class="contato__button">Enviar</button>
+            </form>
         </div>
-
-        <h2>space-evenly</h2>
-        <div class="box__container box__container--evenly">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-        </div>
-
-        <h2>center</h2>
-        <div class="box__container box__container--center">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-        </div>
-
-
-        <h1>grid</h1> 
-        <div class="box__container box__container--grid">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-            <div class="box">Box 4</div>
-            <div class="box">Box 5</div>
-            <div class="box">Box 6</div>
-            <div class="box">Box 7</div>
-            <div class="box">Box 8</div>
-            <div class="box">Box 9</div>
-        </div>
-
-        <div class="box__container box__container--image">
-            <div class="box" id="building"></div>
-            <div class="box" id="notebook"></div>
-        </div>
-
-
-    </div>
+    </section>
+    <section>
+        <footer>
+            <div class="social">
+                <ul>
+                    <li><a class="social__img" href="./assets/images/glowing_facebook_logo_on_a_realistic_3d_circle.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <p>loja x &COPY; Todos os direitos reservados.</p><br>
+                <small>Desenvolvido por Amadeo Bon</small>
+                
+            </div>
+        </footer>
+    </section>
+    
+</div>
 </body>
 </html>
